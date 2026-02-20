@@ -1,5 +1,3 @@
-import { Callout } from 'nextra/components'
-
 # Multi-Agent Orchestration
 
 **February 19, 2026**  
@@ -52,7 +50,9 @@ This multi-tier approach balances consistency guarantees against latency and thr
 
 ### Consensus Engine
 
-When multiple agents must agree on decisions affecting shared state, the consensus engine employs algorithms selected based on failure models and performance requirements:
+When multiple agents must agree on decisions affecting shared state, the consensus engine employs algorithms selected based on failure models and performance requirements.
+
+The consensus engine supports several strategies:
 
 - **Raft Consensus**: For strong consistency requirements with tolerable latency
 - **Eventual Consistency**: For high-throughput scenarios accepting temporary divergence
@@ -67,10 +67,10 @@ The framework allows operators to configure consensus strategies per operation, 
 
 Complex operations are recursively decomposed into discrete, independently executable tasks. Decomposition follows these principles:
 
-1. **Autonomy**: Each subtask can be assigned to a single agent without requiring inter-agent coordination
-2. **Idempotency**: Repeating task execution produces identical results, enabling safe retries
-3. **Granularity**: Tasks are sized to complete within expected network round-trip times
-4. **Observability**: Each task generates standardized completion reports
+- **Autonomy**: Each subtask can be assigned to a single agent without requiring inter-agent coordination
+- **Idempotency**: Repeating task execution produces identical results, enabling safe retries
+- **Granularity**: Tasks are sized to complete within expected network round-trip times
+- **Observability**: Each task generates standardized completion reports
 
 A task decomposition tree represents the recursive breakdown, enabling progress tracking at multiple abstraction levels.
 
