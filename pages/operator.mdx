@@ -102,11 +102,11 @@ Each recovery mechanism includes circuit breakers preventing infinite retry stor
 
 The framework achieves the following performance targets under standard conditions:
 
-- **Task Completion Latency**: 50ms to 5s depending on task complexity and agent distance
-- **Throughput**: 10,000+ simultaneous operations with sub-second operation initiation
-- **Orchestrator Scalability**: Linear scaling to 10,000+ agents per orchestrator instance
-- **State Consistency Latency**: 100ms eventual consistency, or <5ms with strong consistency
-- **Message Delivery Reliability**: 99.99% at-least-once delivery guarantee
+- **Task Completion Latency**: Ranges from 50ms to 5s depending on task complexity and agent distance
+- **Throughput**: Supports 10,000 or more simultaneous operations with sub-second operation initiation
+- **Orchestrator Scalability**: Linear scaling up to 10,000 or more agents per orchestrator instance
+- **State Consistency Latency**: Achieves 100ms eventual consistency, or under 5ms with strong consistency
+- **Message Delivery Reliability**: Provides 99.99 percent at-least-once delivery guarantee
 
 Performance characteristics vary significantly with deployment topology, agent reliability, and network conditions.
 

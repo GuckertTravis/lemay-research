@@ -129,11 +129,11 @@ Information from multiple sources with potentially conflicting claims must be in
 
 MASS systems exhibit the following performance profiles:
 
-- **Reasoning Latency**: 100ms to 10s depending on problem complexity
-- **Agent Throughput**: 1,000+ concurrent reasoning tasks per CAMBRIDGE instance
-- **Semantic Graph Operations**: Sub-millisecond lookups for cached results
-- **Consensus Convergence**: 1-5 seconds for 5-10 agents with conflicting viewpoints
-- **Scalability**: Horizontal scaling to thousands of agents
+- **Reasoning Latency**: Ranges from 100ms to 10s depending on problem complexity
+- **Agent Throughput**: Supports 1,000 or more concurrent reasoning tasks per CAMBRIDGE instance
+- **Semantic Graph Operations**: Achieves sub-millisecond lookups for cached results
+- **Consensus Convergence**: Takes 1 to 5 seconds for 5 to 10 agents with conflicting viewpoints
+- **Scalability**: Enables horizontal scaling to thousands of agents
 
 Performance varies significantly with problem complexity and domain knowledge requirements.
 
@@ -153,7 +153,7 @@ MASS systems must typically integrate with existing enterprise systems:
 
 ### Deployment Topologies
 
-**Monolithic**: All agents and CAMBRIDGE runtime in single deployment. Suitable for development and smaller deployments (< 10 agents).
+**Monolithic**: All agents and CAMBRIDGE runtime in single deployment. Suitable for development and smaller deployments with fewer than 10 agents.
 
 **Distributed**: Agents and runtime components distributed across multiple machines. Enables scaling to hundreds of agents.
 
